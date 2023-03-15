@@ -86,6 +86,11 @@ namespace SMS.Web.Controllers
             if (ModelState.IsValid)
             {
                 // TBC pass data to service to update
+               var x = svc.GetStudent(id);
+               if (x == null)
+                {
+                  return NotFound();
+                } 
                
 
                 return RedirectToAction(nameof(Index));

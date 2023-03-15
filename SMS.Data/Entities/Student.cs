@@ -15,10 +15,10 @@ public class Student
     [Required]
     public string Course { get; set; }
     [Required]
-    [Range(16-80)]
+    [Range(16, 80)]
     public int Age { get; set; } 
     [Required]
-    [Range(0-100)]
+    [Range(0, 100)]
     public double Grade { get; set; }
     [Url]
     public string PhotoUrl { get; set; }     

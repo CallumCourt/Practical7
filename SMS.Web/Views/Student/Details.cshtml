@@ -18,7 +18,7 @@
             <dd class="col-7">@Model.Email</dd>
 
             <dt class="col-5">Classification</dt>
-            <dd class="col-7">@Model.Classify</dd>
+            <dd class="col-7">@Model.Classification</dd>
         </dl>
     </div>
 
@@ -30,12 +30,13 @@
 
 <div class="mt-4">
     <!-- add navigation link to redirect to Index action -->
-  <a asp-controller="Student" asp-action="Index">Index</a>
+  <a class="btn btn-primary" asp-controller="Student" asp-action="Index">Index</a>
+  <a class="btn btn-primary" asp-controller="Student" asp-action="Edit" asp-route-id=@Model.Id>Edit</a>
     
     <!-- add navigation link to Details action, passing the correct route id parameter --> 
-  <a asp-controller="Student" asp-action="Details" asp-route-id="@s.Id">Details</a>
+  <a class="btn btn-primary" asp-controller="Student" asp-action="Details" asp-route-id=@Model.Id>Details</a>
    
     <!-- add navigation link to Delete action, passing the correct route id parameter --> 
-  <a asp-controller="Student" asp-action="Delete" asp-route-id="@s.Id">Delete</a>
+  <a class="btn btn-primary" asp-controller="Student" asp-action="Delete" asp-route-id=@Model.Id>Delete</a>
    
 </div>
