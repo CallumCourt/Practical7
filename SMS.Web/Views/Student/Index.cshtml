@@ -21,10 +21,7 @@
                 <td>@s.Name</td>
                 <td>@s.Email</td>
                 <td>@s.Course</td>
-                <td>@s.Age</td>
-                <td>@s.Grade</td>
-                <td>@s.PhotoUrl</td>
-                <td></td>
+                <td><a asp-controller="Student" asp-action="Details" asp-route-id="@s.Id">View</a></td>
             </tr>
       }
         
