@@ -19,9 +19,9 @@ namespace SMS.Web.Controllers
         public IActionResult Index()
         {
             // TBC - load students using service and pass to view
-           
+           var list = svc.GetStudents();
             
-            return View();
+            return View(list);
         }
 
         // GET /student/details/{id}
