@@ -27,8 +27,8 @@ public static class ServiceSeeder
         });
         var s6 = svc.AddStudent(
             new Student { Name = "Barney Gumble", Course = "Brewing", Email = "barney@mail.com", Age = 39, Grade = 49 //, PhotoUrl = "https://static.wikia.nocookie.net/simpsons/images/6/68/Barney_Gumble_-_shading.png" 
-        });
+        }); 
         
-    }
+    } 
 }
 

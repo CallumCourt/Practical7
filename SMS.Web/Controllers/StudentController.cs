@@ -31,6 +31,10 @@ namespace SMS.Web.Controllers
             var s = svc.GetStudent(id);
 
             // TBC check if s is null and return NotFound()
+            if (s is null)
+          {
+            return NotFound();
+          }
             
 
             // pass student as parameter to the view
@@ -52,6 +56,7 @@ namespace SMS.Web.Controllers
             if (ModelState.IsValid)
             {
                 // TBC call service AddStudent method using data in s
+                svc.AddStudent(s);
                 
                 return RedirectToAction(nameof(Index));
             }
